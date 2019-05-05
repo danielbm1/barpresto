@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../../assets/brand/BarPresto-favicon.png">
+
+  <title>BarPresto | 1.4 Borrar Sección</title>
+</head>
+
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index:999999;">
+    <a class="navbar-brand" href="../../index.html"><img src="../../assets/brand/BarPresto-logo-black.png" width="200px"></a>
+  </nav>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
+    <source src="../../assets/vid/01_organiza_tu_bar/04_BORRAR_SECCION.mp4" type="video/mp4">
+  </video>
+  <div class="content" style="z-index:999999;">
+  <button id="myBtn" onclick="myFunction()">Pausa</button>
+  <button id="myBtn" onclick="window.history.back()">Regresar</button>
+  </div>
+</header>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pausa";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+</body>
+</html>
